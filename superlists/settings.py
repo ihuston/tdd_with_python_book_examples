@@ -84,7 +84,6 @@ WSGI_APPLICATION = 'superlists.wsgi.application'
 #        'NAME': os.path.join(BASE_DIR, '../database/db.sqlite3'),
 #    }
 #}
-print("DATABASE_URL=" + os.environ.get('DATABASE_URL', 'NOT_SPECIFIED'))
 LOCAL_SQLITE='sqlite:///' + os.path.abspath(os.path.join(BASE_DIR, '../database/db.sqlite3'))
 DATABASES = {}
 DATABASES['default'] = dj_database_url.config(default=LOCAL_SQLITE)
